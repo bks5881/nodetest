@@ -1,0 +1,54 @@
+extends layout
+
+block content
+	#find1
+		Rating
+		input#rating(type="text", placeholder="Rating ")
+		select#rangeRating
+			option(value=0) Less than
+			option(value=1) greater than
+			option(value=2) equal                 
+		Year
+		input#year(type="text", placeholder="YYYY")
+		select#rangeYear
+			option(value=0) Less than
+			option(value=1) greater than
+			option(value=2) equal 
+		input#category(type="text", placeholder="category1") 
+		select#protocols
+			option(value='REST') REST
+			option(value='SOAP') SOAP 
+		div(id="submit")
+			button(class="btn", id="text").Button
+			Button          
+	#find2       
+		Year
+		input#year2(type="text", placeholder="YYYY")
+		input#apiName(type="text", placeholder="API") 
+		input#tags(type="text", placeholder="tag")
+		div(id="submit2")
+			button(class="btn", id="query2" value="Button2").Button
+	#find3       
+		KeyApi
+		input#keyapi(type="text", placeholder="keywords")
+		div(id="submit3")
+			button(class="btn", id="query2" value="Button3").Button			
+	#find4       
+		KeyApi
+		input#keymashup(type="text", placeholder="keywords")
+		div(id="submit4")
+			button(class="btn", id="query2" value="Button3").Button								
+	// Wrapper
+	#wrapper
+
+		// USER LIST
+		h2 API List
+		#userList
+			table
+				thead
+					th UserName
+
+				tbody
+		// /USER LIST
+
+	// /WRAPPER
